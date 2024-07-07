@@ -12,9 +12,9 @@ export default function Input({ label, invalid, ...props }) {
   }
 
   return (
-    <>
+    <div className="mb-5">
       <label className={labelClasses}>{label}</label>
       <input className={inputClasses} {...props} />
-    </>
+    </div>
   );
 }
