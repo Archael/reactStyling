@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { styled } from 'styled-components';
+import Button from './Button.jsx';
 
 import CustomInput from './Input.jsx';
 
@@ -53,12 +54,12 @@ export default function AuthInputs() {
         </p>
       </ControlContainer>
       <div className="actions">
-        <button type="button" className="text-button">
+        <Button type="button" className="text-button">
           Create a new account
-        </button>
-        <button className="button" onClick={handleLogin}>
+        </Button>
+        <Button type="button" onClick={handleLogin}>
           Sign In
-        </button>
+        </Button>
       </div>
     </div>
   );
